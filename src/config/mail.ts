@@ -1246,7 +1246,7 @@ div.t3{mso-line-height-alt:45px !important;line-height:45px !important;display:b
                                                                   <!--[if mso]><td class=t114 style="width:600px;"><![endif]-->
                                                                   <p class=t120
                                                                       style="font-family:BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif,'Albert Sans';line-height:22px;font-weight:500;font-style:normal;font-size:12px;text-decoration:none;text-transform:none;direction:ltr;color:#888888;text-align:center;mso-line-height-rule:exactly;mso-text-raise:3px;">
-                                                                      Seattle Limo Services
+                                                                      ATL LUXE Limo Services
 
                                                                       111 W 11th St Ste 234
                                                                       Beverly Hills, LA 90209</p>
