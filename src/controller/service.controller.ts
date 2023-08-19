@@ -24,14 +24,14 @@ export const postService = [
       const publicId = await uploadImageToCloudinary(
         path.join(__dirname, "../uploads/", req.file?.filename)
       );
-      const blog = await Blog.create({
+      const Service = await Service.create({
         data: {
           userId: req.user?.id,
           ...value,
           img: publicId,
         },
       });
-      return res.send(blog);
+      return res.send(Service);
     } catch (err) {
       if (req.file?.filename) {
         //if the validation fails, delete the uploaded file
@@ -46,7 +46,7 @@ export const getServices = catchAsync(
     const page = Number(req.query?.page) || 1;
     const PAGE_SIZE = 6;
     const limit = Number(req.query?.limit) || PAGE_SIZE;
-    const results = await Blog.findMany({
+    const results = await Service.findMany({
       skip: (page - 1) * limit,
       take: limit,
       include: {
@@ -73,7 +73,7 @@ export const getService = catchAsync(
     if (!service) {
       return next(new CustomError("service not found", 404));
     }
-    res.send(blog);
+    res.send(Service);
   }
 );
 
